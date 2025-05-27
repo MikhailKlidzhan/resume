@@ -9,45 +9,70 @@
 </head>
 <body>
     <header>
+        <button id="languageToggle" style="position: fixed; top: 10px; right: 10px; z-index: 1000;">
+            Switch to Russian
+        </button>
         <img src="cv.jpg" alt="Mikhail Klidzhan">
-        <h1>Mikhail Klidzhan</h1>
+        <h1 data-i18n="name">Mikhail Klidzhan</h1>
         <p>Email: <a href="mailto:johniehuge@gmail.com">johniehuge@gmail.com</a></p>
-        <p>Phone: +79959616309</p>
-        <p>Telegram: <a href="https://t.me/klidzhan ">@klidzhan</a></p>
+        <p data-i18n="phone-number">Phone: +79959616309</p>
+        <p data-i18n="telegram">Telegram: <a href="https://t.me/klidzhan ">@klidzhan</a></p>
         <p>Github: <a href="https://github.com/MikhailKlidzhan">MikhailKlidzhan</a></p>
-        <p><strong>I am a Junior Python Developer</strong>.</p>
-        <p>I worked with Telegram bots (e.g., a bot that attaches Bible verses or Quran Ayahs to notes — used stack: <span class="highlight">python-telegram-bot, peewee, PostgreSQL, loguru</span>).</p> 
-        <p>Also created a Django shop app (used: <span class="highlight">Django, DRF, Grafana, Loki, Django Debug Toolbar</span>).</p>
+        <p data-i18n="intro"><strong>I am a Junior Python Developer.</strong>A few words about my experience.</p>
+        <p data-i18n="aston">
+            Aston Company. Front-end developer. 
+            The work was related to outsourcing. I did various things, UI components for dashboards (forms, buttons, modal windows). 
+            As an example, I created a dynamic form with validation via React Hook Form. 
+            Also, implemented dark/light mode switching using React Context.
+        </p>
+
+        <p data-i18n="why-moved">
+            Then I moved to back-end as I wanted to understand Web development more holistically.
+        </p>     
+            
+        <p data-i18n="skillbox">
+            Skillbox Company. I worked with Django. Participated in the creation of an online store application. 
+            I optimized requests through Django ORM (select/prefetch_related). 
+            I wrote unit tests for a view to export files to CSV using Django REST Framework. 
+            Used Docker for project deployment.
+        </p>
+
+        <h3 data-i18n="pet-projects-heading">Pet projects</h3>
+        <p data-i18n="pet-tgbot">I worked with Telegram bots (e.g., a bot that attaches Bible verses or Quran Ayahs to notes — used stack: <span class="highlight">python-telegram-bot, peewee, PostgreSQL, loguru</span>).</p> 
+        <p data-i18n="pet-django">Also created a Django shop app (used: <span class="highlight">Django, DRF, Grafana, Loki, Django Debug Toolbar</span>).</p>
     </header>
     <main>
         <div class="container">
             <!-- Left column -->
              <section class="left-col">
-                <h2>Work Experience</h2>
+                <h2 data-i18n="work-xp">Work Experience</h2>
                 <ul>
-                    <li>English Teacher Online — 7 years (2018–...)</li>
+                    <li data-i18n="xp1">Skillbox. Python-developer (2024-2025)</li>
+                    <li data-i18n="xp2">Aston. Frontend-developer (2023-2024)</li>
+                    <li data-i18n="xp3">English Teacher Online (2018–...)</li>
                 </ul>
-                <h2>Education</h2>
+                <h2 data-i18n="edu">Education</h2>
                 <ul>
-                    <li>Southern Federal University, Russia — High School of Business (2014–2020)</li>
+                    <li data-i18n="edu-university">Southern Federal University, Russia — High School of Business (2014–2020)</li>
                 </ul>
-                <h2>Languages</h2>
+                <h2 data-i18n="langs">Languages</h2>
                 <ul>
-                    <li>Russian (native)</li>
-                    <li>English (B2-C1)</li>
-                    <li>German (A1-A2)</li>
+                    <li data-i18n="rus">Russian (native)</li>
+                    <li data-i18n="english">English (C1)</li>
+                    <li data-i18n="deutch">German (A2)</li>
+                    <li data-i18n="italiano">Italian (A1)</li>
                 </ul>
              </section>
             <!-- Right column -->
              <section class="right-col">
-                <h2>Courses</h2>
+                <h2 data-i18n="courses-heading">Courses</h2>
                 <ul>
-                    <li>Skillbox's Python Developer Profession - 2023-2025</li>
-                    <li>Khan Academy's <a href="https://www.khanacademy.org/computing/ap-computer-science-principles">College Computer Science Principles</a> 2024-2025</li>
-                    <li><a href="https://pll.harvard.edu/course/cs50-introduction-computer-science">Harvard's CS50</a> - 2022-2023</li>
-                    <li>Andersen's JavaScript/React internship 2022</li>
+                    <li data-i18n="courses1">Skillbox Python Developer Profession - 2023-2025</li>
+                    <li data-i18n="courses2">Khan Academy <a href="https://www.khanacademy.org/computing/ap-computer-science-principles">College Computer Science Principles</a> - 2024-2025</li>
+                    <li data-i18n="courses3"><a href="https://pll.harvard.edu/course/cs50-introduction-computer-science">Harvard CS50</a> - 2022-2023</li>
+                    <li data-i18n="courses4">Andersen JavaScript/React internship 2023</li>
                 </ul>
-                <h2>Skills</h2>
+                <h2 data-i18n="skills-heading">Skills</h2>
                 <ul>
                     <li>Python 3.x</li>
                     <li>Django</li>
@@ -55,14 +80,17 @@
                     <li>python-telegram-bot</li>
                     <li>HTML, CSS, JavaScript</li>
                     <li>Peewee, PostgreSQL</li>
+                    <li>Docker</li>
+                    <li>Linux</li>
+                    <li>React</li>
                 </ul>
-                <h2>Interests</h2>
+                <h2 data-i18n="interests-heading">Interests</h2>
                 <ul>
-                    <li>Studying IT literature on Python, Django, Go</li>
-                    <li>Algorithms, Computer Science, Web</li>
-                    <li>Sports</li>
-                    <li>Music</li>
-                    <li>Movies</li>
+                    <li data-i18n="interest1">Studying IT literature on Python, Django, Go</li>
+                    <li data-i18n="interest2">Algorithms, Computer Science, Web</li>
+                    <li data-i18n="interest3">Sports</li>
+                    <li data-i18n="interest4">Music</li>
+                    <li data-i18n="interest5">Movies</li>
                 </ul>
              </section>
         </div>
@@ -70,5 +98,115 @@
     <footer>
         <p>&copy; 2025 Mikhail Klidzhan</p>
     </footer>
+
+    <!-- Button to change language -->
+    <script>
+    const toggle = document.getElementById('languageToggle');
+    let currentLang = 'en';
+    
+    // Content for both languages
+    const translations = {
+        'en': {
+            'name': 'Mikhail Klidzhan',
+            'phone-number': 'Phone: +79959616309',
+            'telegram': 'Telegram: <a href="https://t.me/klidzhan ">@klidzhan</a>',
+            'intro': '<strong>I am a Junior Python Developer.</strong> A few words about my experience.',
+            'aston': 'Aston Company (2023-2024). Position: Front-end developer. The work was related to outsourcing. I did various things, UI components for dashboards (forms, buttons, modal windows). As an example, I created a dynamic form with validation via React Hook Form. Also, implemented dark/light mode switching using React Context.',
+            'why-moved': 'Then I moved to back-end as I wanted to understand Web development more holistically.',
+            'skillbox': 'Skillbox Company (2024-2025). I worked with Django. Participated in the creation of an online store application. I optimized requests through Django ORM (select/prefetch_related). I wrote unit tests for a view to export files to CSV using Django REST Framework. Used Docker for project deployment.',
+            'pet-projects-heading': 'Pet projects',
+            'pet-tgbot': 'I worked with Telegram bots (e.g., a bot that attaches Bible verses or Quran Ayahs to notes — used stack: <span class="highlight">python-telegram-bot, peewee, PostgreSQL, loguru</span>).',
+            'pet-django': 'Also created a Django shop app (used: <span class="highlight">Django, DRF, Grafana, Loki, Django Debug Toolbar</span>).',
+            'work-xp': 'Work Experience',
+            'xp1': 'Skillbox. Python-developer (2024-2025)',
+            'xp2': 'Aston. Frontend-developer (2023-2024)',
+            'xp3': 'English Teacher Online (2018–...)',
+            'edu': 'Education',
+            'edu-university': 'Southern Federal University, Russia — High School of Business (2014–2020)',
+            'langs': 'Languages',
+            'rus': 'Russian (native)',
+            'english': 'English (C1)',
+            'deutch': 'German (A2)',
+            'italiano': 'Italian (A1)',
+            'courses-heading': 'Courses',
+            'courses1': 'Skillbox Python Developer Profession - 2023-2025',
+            'courses2': 'Khan Academy <a href="https://www.khanacademy.org/computing/ap-computer-science-principles">College Computer Science Principles</a> - 2024-2025',
+            'courses3': '<a href="https://pll.harvard.edu/course/cs50-introduction-computer-science">Harvard CS50</a> - 2022-2023',
+            'courses4': 'Andersen JavaScript/React internship 2023',
+            'skills-heading': 'Skills',
+            'interests-heading': 'Interests',
+            'interest1': 'Studying IT literature on Python, Django, Go',
+            'interest2': 'Algorithms, Computer Science, Web',
+            'interest3': 'Sports',
+            'interest4': 'Music',
+            'interest5': 'Movies',
+            'toggleButton': 'Switch to Russian'
+        },
+        'ru': {
+            'name': 'Михаил Клиджан',
+            'phone-number': 'Телефон: +79959616309',
+            'telegram': 'Телеграм: <a href="https://t.me/klidzhan ">@klidzhan</a>',
+            'intro': '<strong>Я junior-разработчик на Python.</strong> Немного о моем опыте.',
+            'aston': 'Компания Астон (2023-2024). Позиция: Front-end разработчик. Работа была связана с аутсорсингом. Делал различные вещи, UI компоненты для дашбордов (формы, кнопки, модальные окна). В качестве примера, я создал динамическую форму с валидацией через React Hook Form. Также реализовал переключение темного/светлого режима с помощью React Context.',
+            'why-moved': 'Затем я перешел на back-end, так как хотел понять веб-разработку более целостно.',
+            'skillbox': 'Компания Skillbox (2024-2025). Я работал с Django. Участвовал в создании приложения для интернет-магазина. Оптимизировал запросы через Django ORM (select/prefetch_related). Написал юнит-тесты для представления, экспортирующего файлы в CSV с помощью Django REST Framework. Использовал Docker для развертывания проекта.',
+            'pet-projects-heading': 'Пет-проекты',
+            'pet-tgbot': 'Я работал с ботами Telegram (например, с ботом, который прикрепляет к запискам стихи из Библии или аяты из Корана - стек: <span class="highlight">python-telegram-bot, peewee, PostgreSQL, loguru</span>).',
+            'pet-django': 'Также создал магазин-приложение на Django (стек: <span class="highlight">Django, DRF, Grafana, Loki, Django Debug Toolbar</span>).',
+            'work-xp': 'Опыт работы',
+            'xp1': 'Skillbox. Python-developer (2024-2025)',
+            'xp2': 'Aston. Frontend-developer (2023-2024)',
+            'xp3': 'Преподаватель английского онлайн (2018–...)',
+            'edu': 'Образование',
+            'edu-university': 'Южный Федеральный Университет — Высшая школа бизнеса (2014–2020)',
+            'langs': 'Языки',
+            'rus': 'Русский (родной)',
+            'english': 'Английский (C1)',
+            'deutch': 'Немецкий (A2)',
+            'italiano': 'Итальянский (A1)',
+            'courses-heading': 'Курсы',
+            'courses1': 'Skillbox профессия Python-разработчик - 2023-2025',
+            'courses2': '<a href="https://www.khanacademy.org/computing/ap-computer-science-principles">Основы Computer Science по программе колледжа</a> Академии Хана - 2024-2025',
+            'courses3': '<a href="https://pll.harvard.edu/course/cs50-introduction-computer-science">Гарвард CS50</a> - 2022-2023',
+            'courses4': 'Стажировка-интенсив JavaScript/React компании Andersen 2023',
+            'skills-heading': 'Навыки',
+            'interests-heading': 'Интересы',
+            'interest1': 'Изучение литературы по IT, Python, Django, Go',
+            'interest2': 'Алгориты, Computer Science, Веб',
+            'interest3': 'Спорт',
+            'interest4': 'Музыка',
+            'interest5': 'Фильмы',
+            'toggleButton': 'Переключить на английский'
+        }
+    };
+    
+    function updateTexts() {
+        // Update all elements with data-i18n attribute
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            el.innerHTML = translations[currentLang][key];
+        });
+        
+        // Update button text
+        toggle.textContent = translations[currentLang]['toggleButton'];
+    }
+    
+    toggle.addEventListener('click', () => {
+        currentLang = currentLang === 'en' ? 'ru' : 'en';
+        updateTexts();
+        
+        // Optional: Save preference to localStorage
+        localStorage.setItem('languagePreference', currentLang);
+    });
+    
+    // Check for saved preference on load
+    const savedLang = localStorage.getItem('languagePreference');
+    if (savedLang) {
+        currentLang = savedLang;
+    }
+    
+    // Initial update
+    updateTexts();
+    </script>
 </body>
 </html>
